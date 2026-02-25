@@ -31,3 +31,17 @@ b=input("Enter second number: ")
 c=input("Enter third number: ")
 
 print(average(int(a),int(b),int(c)))'''
+
+#2Lambda Function
+'''square = lambda x : x*x
+x=int(input("Enter a number: "))
+print("Square of",x,"is",square(x))
+'''
+#3. make a function which find factorial of N number
+'''def factorial(n):
+  fact=1
+  for i in range(1,n+1):
+    fact=fact*i
+  return fact
+n=int(input("ENter Number : "))
+print("Factorial of ",n," is ",factorial(n))'''
