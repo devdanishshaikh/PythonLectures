@@ -79,7 +79,7 @@ while(message!="Quit"):
   message = (input("Enter a number or type 'Quit' to exit: "))'''
 
 # create a simple calculator that can perform basic arithmetic operations like addition, subtraction, multiplication, and division. The program should take two numbers and an operator as input from the
-def calculator(num1, num2, operator):
+'''def calculator(num1, num2, operator):
   if(operator=="+"):
     return num1+num2
   elif(operator=="-"):
@@ -91,3 +91,25 @@ def calculator(num1, num2, operator):
       return num1/num2
     else:
       return "Error: Division by zero is not allowed."
+  else:    return "Error: Invalid operator. Please use +, -, *, or /."
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))  
+operator = input("Enter the operator (+, -, *, /): ")
+result = calculator(num1, num2, operator)
+print("The result is:", result)'''
+
+#Q10. Letʼs create a “Number Guessing Game”. Given a secret number (already 
+#decided by you), write a program that asks the user to guess it and prints: 
+#“Too low” if the userʼs guess is less than the secret number, 
+#“Too high” if the userʼs guess is greater than the secret number, and  
+#“Congratulations! You guessed the number.” if the userʼs guess is correct.
+'''secret_number = 42
+guess = int(input("Guess the secret number: "))
+while guess != secret_number:
+    if guess < secret_number:
+        print("Too low")
+    else:
+        print("Too high")
+    guess = int(input("Guess the secret number: "))
+print("Congratulations! You guessed the number.")'''
+
