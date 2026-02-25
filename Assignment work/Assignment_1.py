@@ -20,10 +20,74 @@ print("Your salary after tax is: ", after_tax_salary)'''
 
 #Q2. Write a function that takes two integers and and prints all even 
 #numbers between them (inclusive). 
-def even(a,b):
+'''def even(a,b):
   for i in range(a,b+1):
     if(i%2==0):
-      print(i)
+      print(i, end=" ")
 a= int(input("ENter the first number: "))
 b= int(input("ENter the second number: "))
-even(a,b)
+even(a,b)'''
+
+ 
+'''Q3. Write a function that prints the digits of a number, . 
+For eg: , there are 3 digits in it 3, 1 and 2 & we need to print them. 
+ 
+ 
+[Hint - The right most digit of a number N is N%10. 
+And to remove the right most digit from a number, we can do N = N / 10.] '''
+  
+'''def count_digit(n):
+  if(n==0):
+    return 1
+  count =0
+  while(n>0):
+    n=n//10
+    count+=1
+  return count
+n=int(input("Enter a number :"))
+print("The number of digits in the number is: ", count_digit(n))'''
+
+
+#Q5. Write a function to return the sum of digits of a number, . 
+'''def sum_of_digits(n):
+  sum=0
+  while(n>0):
+    r=n%10
+    sum=sum+r
+    n=n//10
+  return sum
+n=int(input("Enter a number :"))
+print("The sum of digits in the number", n, "is :", sum_of_digits(n))'''
+
+#.Write a program that print 1 to 100 divisible by 3 and 5
+
+'''for i in range(1,100):
+  if(i%3==0 and i%5==0):
+    print(i, end=" ")'''
+
+'''Design a program to continuously input a number from user & print if it is 
+positive or negative until the user enters “Quit”.'''
+
+'''message = (input("Enter a number or type 'Quit' to exit: "))
+while(message!="Quit"):
+  if(int(message)>0):
+    print("The number is positive")
+  elif(int(message)<0):
+    print("The number is negative")
+  else:
+    print("The number is zero")
+  message = (input("Enter a number or type 'Quit' to exit: "))'''
+
+# create a simple calculator that can perform basic arithmetic operations like addition, subtraction, multiplication, and division. The program should take two numbers and an operator as input from the
+def calculator(num1, num2, operator):
+  if(operator=="+"):
+    return num1+num2
+  elif(operator=="-"):
+    return num1-num2
+  elif(operator=="*"):
+    return num1*num2
+  elif(operator=="/"):
+    if(num2!=0):
+      return num1/num2
+    else:
+      return "Error: Division by zero is not allowed."
