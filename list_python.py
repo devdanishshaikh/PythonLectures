@@ -8,7 +8,7 @@ print(len(marks))
 print(marks[2:6])'''
 
 
-# =============================================
+'''# =============================================
 # Problem: Find the Second Largest Element in a List
 # =============================================
 
@@ -45,4 +45,30 @@ if __name__ == "__main__":
 
     test4 = [12, 35, 1, 10, 34, 1]
     print(f"\nList: {test4}")
-    print(f"Second Largest: {find_second_largest(test4)}")  # Expected: 34
+    print(f"Second Largest: {find_second_largest(test4)}")  # Expected: 34'''
+
+'''    # =============================================
+    # Problem: Slicing a list
+my_list = [10, 20, 30, 40, 50, 60, 70]
+sliced_list = my_list[1:4]  # This will include elements at index 2, 3, and 4
+print(sliced_list)  # Output: [30, 40, 50]'''
+
+
+
+# =============================================
+# All list Methods
+# =============================================
+'''marks=[10,20,30,40,50,60,70]
+print(marks)
+marks.append(80)
+print(marks)
+marks.insert(0,7)
+print(marks)
+marks.remove(20)
+print(marks)
+marks.pop(3)
+print(marks)
+marks.reverse()
+print(marks)
+print(len(marks))
+print(marks[2:6])'''
