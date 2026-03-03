@@ -72,3 +72,19 @@ marks.reverse()
 print(marks)
 print(len(marks))
 print(marks[2:6])'''
+
+'''marks=[10,20,30,40]
+x=int(input("Enter the element to search: "))
+index=0
+for val in marks:
+  if val==x:
+    print(f"Element {x} found at index {index}")
+    break
+  index+=1'''
+
+'''tup=(1,2,3,4,5,6,7,8,9,10)
+sum=0
+for val in tup:
+  if val%2==0:
+    sum+=val
+print(f"Sum of elements in tuple: {sum}")'''
