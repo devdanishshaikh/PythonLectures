@@ -32,7 +32,33 @@ if(marks >=50):
 else:
   print("Fail")'''
 
+# Q : 4 :- While loop ka use krke 1 se 10 tak ke numbers print kro
+'''num = 1
+while (num <=10):
+  print(num, end=" ")
+  num+=1  '''
+# Q : 4 :- While loop ka use krke 1 se 100 ke bech numbers even print krwo print kro
+'''num = 1
+while (num <= 100):
+    if (num % 2 == 0):
+        print(num, end=" ")
+    num += 1'''
+
+# Q : 5 :- While loop ka use krke mathematic table print krwo
+'''while True:
+  num = int(input("Enter a number to print its table :"))
+  i = 1
+  while (i<=10):
+    print(f"{num} x {i} = {num*i}")
+    i+=1'''
+
+
+# Q : 6 :- While loop ka use krke 1 se 10 ke bech odd numbers print krwo print kro
 num = 1
-while(num<=10):
-  print(num,end=" ")
-  num = num + 1 
+while (num <= 10):
+  if (num % 2 == 0):
+    num+=1
+    continue
+  print(num, end=" ")
+  num+=1
+  
