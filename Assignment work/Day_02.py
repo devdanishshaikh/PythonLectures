@@ -31,3 +31,8 @@ if(marks >=50):
     print("Pass")
 else:
   print("Fail")'''
+
+num = 1
+while(num<=10):
+  print(num,end=" ")
+  num = num + 1 
