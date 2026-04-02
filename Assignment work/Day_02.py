@@ -54,11 +54,57 @@ while (num <= 100):
 
 
 # Q : 6 :- While loop ka use krke 1 se 10 ke bech odd numbers print krwo print kro
-num = 1
+'''num = 1
 while (num <= 10):
   if (num % 2 == 0):
     num+=1
     continue
   print(num, end=" ")
   num+=1
-  
+  '''
+
+# Q : 7 :- For Loop ka use krke 1 se 10 tak ke numbers print kro
+'''for i in range(1,11):
+  print(i, end=" ")'''
+
+
+# Q : 8 :- for loop use krke string se vowel print kro
+'''name = "Danish ALi Shaikh"
+for i in name:
+  if (i == "a" or i == "A" or i == "e" or i == "E" or i == "i" or i == "I" or i == "o" or i == "O" or i == "u" or i == "U"):
+    print(i, end=" ")'''
+# same but here only i ko find krke doond rhe hy
+'''name = "Artificial Intelligence"
+count = 0
+for y in name:
+  if y == "z" or y == "Z":
+    count+=1
+print(f"Total number of i in {name} is : {count}")
+'''
+
+
+# Q : 9 :- for loop use krke sum of N numbers find kro
+num = int(input("Enter a number :"))
+sum = 0
+for i in range(1,num+1):
+  sum+=i
+print(f"Sum of first {num} numbers is : {sum}")
+
+
+# Q : 10 :- Prime Number Check (For Loop)
+# Title: User se number input lo aur check karo prime hai ya nahi
+number = int(input("Enter a number to check prime: "))
+
+if number <= 1:
+  print("Not a prime number")
+else:
+  is_prime = True
+  for i in range(2, int(number ** 0.5) + 1):
+    if number % i == 0:
+      is_prime = False
+      break
+
+  if is_prime:
+    print("Prime number")
+  else:
+    print("Not a prime number")
