@@ -48,3 +48,13 @@ else:
 name = input("Enter your name :")
 age = int(input("Enter your age :"))
 print("Hello", name + ", you will be", age + 1, "next year")
+
+# Q : 7  User se number lo aur uska square print karo.
+'''num = int(input("Enter a number :"))
+square = num * num
+print("Square of", num, "is :", square)'''
+
+# Q : 8  User se temperature Celsius me lo aur Fahrenheit me convert karo.
+'''celsius = float(input("Enter temperature in Celsius :"))
+fahrenheit = (celsius * 9/5) + 32
+print("Temperature in Fahrenheit :", fahrenheit)'''
